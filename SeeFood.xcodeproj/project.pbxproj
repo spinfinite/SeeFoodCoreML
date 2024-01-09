@@ -13,6 +13,7 @@
 		8E9F69BA2B06696100935B63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F69B82B06696100935B63 /* Main.storyboard */; };
 		8E9F69BC2B06696400935B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F69BB2B06696400935B63 /* Assets.xcassets */; };
 		8E9F69BF2B06696400935B63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F69BD2B06696400935B63 /* LaunchScreen.storyboard */; };
+		8E9F69C72B066AA100935B63 /* Inceptionv3.mlkitmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F69C62B066AA000935B63 /* Inceptionv3.mlkitmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8E9F69BB2B06696400935B63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E9F69BE2B06696400935B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E9F69C02B06696400935B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9F69C62B066AA000935B63 /* Inceptionv3.mlkitmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlkitmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				8E9F69B82B06696100935B63 /* Main.storyboard */,
 				8E9F69BB2B06696400935B63 /* Assets.xcassets */,
 				8E9F69BD2B06696400935B63 /* LaunchScreen.storyboard */,
+				8E9F69C62B066AA000935B63 /* Inceptionv3.mlkitmodel */,
 				8E9F69C02B06696400935B63 /* Info.plist */,
 			);
 			path = SeeFood;
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9F69C72B066AA100935B63 /* Inceptionv3.mlkitmodel in Sources */,
 				8E9F69B72B06696100935B63 /* ViewController.swift in Sources */,
 				8E9F69B32B06696100935B63 /* AppDelegate.swift in Sources */,
 				8E9F69B52B06696100935B63 /* SceneDelegate.swift in Sources */,
