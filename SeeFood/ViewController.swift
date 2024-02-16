@@ -49,18 +49,28 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             fatalError("Loading CoreML model failed.")
         }
         
-        let request = VNCoreMLRequest(model: model) { (request, error) in guard let results = request.results as? [VNClassificationObservation] else {
+        let request = VNCoreMLRequest(model: model) { (request, error) in
+            guard let results = request.results as? [VNClassificationObservation] else {
             fatalError("Model failed to process image.")
             
-        }
-            print(results)
+            }
+            //print(results)
+            
+            if let firstResult = results.first {
+                if firstResult.identifier.contains("hotdog"){
+                    self.navigationItem.title = "Hotdog!"
+                } else {
+                    self.navigationItem.title = "Not Hotdog!"
+                }
+            }
+            
         }
         
         let handler = VNImageRequestHandler(ciImage: image)
         
         do {
             
-            try! handler.perform([request])
+            try handler.perform([request])
         }
         catch {
             print(error)
